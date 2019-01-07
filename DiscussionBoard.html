@@ -1,0 +1,52 @@
+<html>
+<body id="main">
+	<link rel="stylesheet" type="text/css" href="discussionBoard_stylesheet.css">
+	<script src="jquery-ui.min.js"></script>
+	<div id="top-bar">
+		<a href="classBoard.html" onclick = "return confirm('Are you sure you wish to exit?\nAll current scores will be lost on exit.')"><button id="exit" type="button" class="header-buttons"></button></a>
+		<header>
+			<title>920</title>
+		</header>
+		<button id="finish" type="button" class="header-buttons"></button>
+	</div>
+	<div id="board">
+	</div>
+</body>
+<div id="blur">
+</div>
+<div id="log">
+	<button id="exit-log" type="button" class="x-button">X</button>
+	<div id="log-content">
+	</div>
+	<div id="student-list">
+	</div>
+</div>
+<div id="commentSelect">
+	<div id="commentContainer">
+		<div class="commentButton" onclick="addComment(1)">Contribution made</div>
+		<div class="commentButton" onclick="addComment(2)">Evidence was used</div>
+		<div class="commentButton" onclick="addComment(3)">Changed flow of conversation</div>
+		<div class="commentButton" onclick="addComment(4)">New interpretation</div>
+		<div class="commentButton" onclick="addComment(5)">Restated obvious</div>
+		<div class="commentButton" onclick="addComment(6)">Negatively contributed</div>
+	</div>
+</div>
+<!--END OF DOCUMENT-->
+	<!-- <div class="studentCard">
+				<div class="cardTop">studentName</div>
+				<div class="buttonLayer">
+					<button class="scoringButton" type="button" value="-1">-1</button>
+					<button class="scoringButton" type="button" value="0">0</button>
+					<button class="scoringButton" type="button" value="1">1</button>
+					<button class="scoringButton" type="button" value="2">2</button>
+					<button class="scoringButton" type="button" value="3">3</button>
+				</div>
+				<div class="scoreLayer">
+					currentScore
+				</div>
+	</div> -->
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="discussionBoard.js"></script>
+
+</html>

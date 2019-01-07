@@ -1,0 +1,272 @@
+/*__General__*/
+#main {
+	height: 100%;
+	width: 100%;
+	background: rgb(26,26,26);
+	margin: 0px;
+	z-index: 1;
+}
+
+header{
+	position: relative;
+	float:left;
+	color: rgb(200,200,200);
+	background-color: rgb(50,50,50);
+	display: block;
+	height: 7.5%;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	background-image: url("920_logo.png");
+	background-size: 100% 100%;
+}
+.absort {
+	position: relative;
+	float: center:;
+	background-color: #862d2d;
+	color: white;
+	margin:2% 0% 0% auto;
+	display:none;
+}
+title{
+
+}
+.ui-tabs .ui-tabs-nav .ui-state-default, 
+.ui-tabs.ui-widget-content .ui-state-default, 
+.ui-tabs .ui-widget-header .ui-state-default {
+	padding: 0%;
+	border: 3px solid transparent; 
+	background-color: transparent;
+	font-weight: bold;
+	color: white;
+}
+/*----- Tabs -----*/
+.tabs {
+}
+.tab {
+	display:none;
+}
+.tab.active {
+	display:block;
+}
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+	content:'';
+}
+
+#tabButtons {
+	width:14%;
+	height:92.5%;
+	float:left;
+}
+
+.tab-links li {
+	position:relative;
+	clear:both;
+	float:center;
+	text-align:center;
+	margin:auto;
+	line-height: 50px;
+	vertical-align:middle;
+	list-style:none;
+	background-color:#9aa4a3;
+	width:100%;
+	height:8%;
+	font: 13px;
+	font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+	transition:all linear 0.08s;
+}
+.tab-links a {	
+	text-decoration:none;
+	display:block;
+	background-color:rgb(30,30,30);
+	line-height: 100%;
+	vertical-align:middle;
+	font-size:16px;
+	font-weight:600;
+	color:white;
+	transition:all linear 0.15s;
+}
+
+.tab-links li:hover {
+	background:#616b6b;
+	text-decoration:none;
+
+}
+
+li.active {
+	background:white;
+	color:black;
+}
+
+/*----- Content of Tabs -----*/
+	.tab-content {
+		width:86%;
+		height:92.5%;
+		position:relative;
+		float:right;
+		color:white;
+		background:white;
+	}
+
+	.trash {
+		width:20%;
+		height:8%;
+		margin:1% 0% 0% 1%;
+		background-color:transparent;
+		color: #330000;
+		float:left;
+		text-align:center;
+		font: 18px arial, sans-serif;
+		background-image: url("trashicon_closed.png");
+		background-size: 70px 50px;
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+
+	.student-input {
+		float: left;
+		padding-top:0%;
+		margin:1% 0% 0% 1%;
+		width:70%;
+		height:4%;
+		background-color:white;
+	}
+
+	textarea {
+		width:100%;
+		height:100%;
+		outline: none;
+		resize: none;
+	}
+
+	.student-container {
+		width:20%;
+		height:87%;
+		margin:0% 0% 0% 1%;
+		padding:0% 0% 0% 0%;
+		float:left;
+		background:#c9cfcf;
+		border-radius:5px;
+		overflow-y:scroll;
+		overflow-x:hidden;
+	}
+
+	.student-lists {
+		position:relative;
+		background-color: transparent;
+		overflow:visible;
+		top:0.5%;
+		left:-15%;
+		margin: 0% 0% 0% 0%;
+		list-style-type: none;
+		color: black;
+		font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+	}
+
+	.student-lists li {
+		position: relative;
+		z-index: 100;
+	}
+	/*-----UI Buttons-----*/
+	.buttons-container {
+		position: relative;
+		float: left;
+		width:70%;
+		height:5%;
+		margin: 0% 0% 0% 1%;
+		padding-top: 0.5%;
+	}
+	.student-list-buttons {
+		background-color: #e7e7e7;
+		color: black;
+	    border: none;
+	    padding: 0.5%;
+	  	width: 15%;
+	    text-align: center;
+	    text-decoration: none;
+	    font-size: 12px;
+	    transition-duration: 0.4s;
+	}
+	.student-list-buttons:hover {
+	}
+	.removeAll {
+		height:60%;
+		background-color:transparent;
+		background-image:url("removeallicon.png");
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:20px 18px;
+	}
+	.removeAll:hover {
+		opacity:0.4;
+	}
+	.add {
+		height:60%;
+		background-color:transparent;
+		background-image:url("addstudenticon.png");
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:20px 18px;
+		border-radius:10px;
+	}
+	.add:hover {
+		opacity:0.4;
+	}
+	.start-discussion-button {
+		background-color: transparent;
+		float:right;
+	    padding: 0.5%;
+	    margin-top: -1%;
+	  	width: 15%;
+	  	height: 100%;
+	  	border: none;
+	    background-image:url("startdiscussionicon.png");
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:120px 20px;
+	    transition-duration: 0.4s;
+	}
+
+	.start-discussion-button:hover {
+		opacity:0.4;
+	}
+
+	/*-----Student Layout-----*/
+	.clear-seats {
+		position:absolute;
+		width: 8%;
+		height: 4%;
+		top:50%;
+		left:56%;
+	}
+	.student-slot {
+		position:absolute;
+		width: 8%;
+		height: 4%;
+		background-color: transparent;
+		color:black;
+		border-bottom:5px solid black;
+		border-radius: 10px;
+	}
+	.student-slot li {
+		text-align:center;
+		color:black;
+		float:center;
+		margin:auto;
+	}
+	.student-layout {
+		float:left;
+		height:87%;
+		width: 77%;
+		margin: 0% 0% 0% 1%;
+		color:black;
+		background-color: transparent;
+		list-style-type: none;
+		font-size: 18px;
+		font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+	}
+	.trash-hover {
+		background-image: url("trashicon_opened.png");
+	}

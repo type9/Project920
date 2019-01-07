@@ -1,0 +1,150 @@
+<html>
+<body id="main">
+	<link rel="stylesheet" type="text/css" href="classBoard_stylesheet.css">
+	<link rel="stylesheet" href="jquery-ui.min.css">
+
+	<!--EARLEY LOGO-->
+	<header>
+		<title>920</title>
+	</header>
+
+	<!--Class Selector Tabs-->
+	<div class="tabs">
+		<div id="tabButtons" class="tab-links">
+			<a href="#tab1"><li class="active">Class 1</li></a>
+			<a href="#tab2"><li>Class 2</li></a>
+			<a href="#tab3"><li>Class 3</li></a>
+			<a href="#tab4"><li>Class 4</li></a>
+			<a href="#tab5"><li>Class 5</li></a>
+			<a href="#tab6"><li>Class 6</li></a>
+			<button class="absort" type="button">AB SORT</button>
+		</ul>
+	</div>
+	<div class="tab-content">
+		<div id="tab1" class="tab active">
+			<div class="trash" id="trash1"></div>
+			<div class="student-input">
+				<form class="student-form" autocomplete="off">
+					<textarea placeholder="Enter student name(s)" id="studentInput1" name="studentname" rows:"10" cols:"30"></textarea>
+				</form>
+			</div>
+			<div class="buttons-container">
+				<button id="add1" type="button" class="student-list-buttons add"></button>
+				<button id="removeall1" type="button" class="student-list-buttons removeall"></button>
+				<a onclick="startDiscussion()" href="DiscussionBoard.html"><button type="button" class="start-discussion-button"></button></a>
+			</div>
+			<div class="student-container">
+				<ul class = "student-lists" id="student-list1"></ul>
+			</div>
+			<div id="student-layout1" class="student-layout">
+				<button id="clear-seats1" type="button" class="clear-seats">CLEARSEATS</button>
+			</div>
+		</div>
+
+		<div id="tab2" class="tab">
+			<div class="trash" id="trash2"></div>
+			<div class="student-input">
+				<form class="student-form" autocomplete="off">
+					<textarea placeholder="Enter student name(s)" id="studentInput2" name="studentname" rows:"10" cols:"30"></textarea>
+				</form>
+			</div>
+			<div class="buttons-container">
+				<button id="add2" type="button" class="student-list-buttons add"></button>
+				<button id="removeall2" type="button" class="student-list-buttons removeall"></button>
+				<a onclick="startDiscussion()" href="DiscussionBoard.html"><button type="button" class="start-discussion-button"></button></a>
+			</div>
+			<div class="student-container">
+				<ul class = "student-lists" id="student-list2"></ul>
+			</div>
+			<div id="student-layout2" class="student-layout">
+				<button id="clear-seats1" type="button" class="clear-seats">CLEARSEATS</button>
+			</div>
+		</div>
+		<div id="tab3" class="tab">
+			<div class="trash" id="trash3"></div>
+			<div class="student-input">
+				<form class="student-form" autocomplete="off">
+					<textarea placeholder="Enter student name(s)" id="studentInput3" name="studentname" rows:"10" cols:"30"></textarea>
+				</form>
+			</div>
+			<div class="buttons-container">
+				<button id="add3" type="button" class="student-list-buttons add"></button>
+				<button id="removeall3" type="button" class="student-list-buttons removeall"></button>
+				<a onclick="startDiscussion()" href="DiscussionBoard.html"><button type="button" class="start-discussion-button"></button></a>
+			</div>
+			<div class="student-container">
+				<ul class = "student-lists" id="student-list3"></ul>
+			</div>
+			<div id="student-layout3" class="student-layout">
+				<button id="clear-seats1" type="button" class="clear-seats">CLEARSEATS</button>
+			</div>
+		</div>
+
+		<div id="tab4" class="tab">
+			<div class="trash" id="trash4"></div>
+			<div class="student-input">
+				<form class="student-form" autocomplete="off">
+					<textarea placeholder="Enter student name(s)" id="studentInput4" name="studentname" rows:"10" cols:"30"></textarea>
+				</form>
+			</div>
+			<div class="buttons-container">
+				<button id="add4" type="button" class="student-list-buttons add"></button>
+				<button id="removeall4" type="button" class="student-list-buttons removeall"></button>
+				<a onclick="startDiscussion()" href="DiscussionBoard.html"><button type="button" class="start-discussion-button"></button></a>
+			</div>
+			<div class="student-container">
+				<ul class = "student-lists" id="student-list4"></ul>
+			</div>
+			<div id="student-layout4" class="student-layout">
+				<button id="clear-seats1" type="button" class="clear-seats">CLEARSEATS</button>
+			</div>
+		</div>
+
+		<div id="tab5" class="tab">
+			<div class="trash" id="trash5"></div>
+			<div class="student-input">
+				<form class="student-form" autocomplete="off">
+					<textarea placeholder="Enter student name(s)" id="studentInput5" name="studentname" rows:"10" cols:"30"></textarea>
+				</form>
+			</div>
+			<div class="buttons-container">
+				<button id="add5" type="button" class="student-list-buttons add"></button>
+				<button id="removeall5" type="button" class="student-list-buttons removeall"></button>
+				<a onclick="startDiscussion()" href="DiscussionBoard.html"><button type="button" class="start-discussion-button"></button></a>
+			</div>
+			<div class="student-container">
+				<ul class = "student-lists" id="student-list5"></ul>
+			</div>
+			<div id="student-layout5" class="student-layout">
+				<button id="clear-seats1" type="button" class="clear-seats">CLEARSEATS</button>
+			</div>
+		</div>
+
+		<div id="tab6" class="tab">
+			<div class="trash" id="trash6"></div>
+			<div class="student-input">
+				<form class="student-form" autocomplete="off">
+					<textarea placeholder="Enter student name(s)" id="studentInput6" name="studentname" rows:"10" cols:"30"></textarea>
+				</form>
+			</div>
+			<div class="buttons-container">
+				<button id="add6" type="button" class="student-list-buttons add"></button>
+				<button id="removeall6" type="button" class="student-list-buttons removeall"></button>
+				<a onclick="startDiscussion()" href="DiscussionBoard.html"><button type="button" class="start-discussion-button"></button></a>
+			</div>
+			<div class="student-container">
+				<ul class = "student-lists" id="student-list6"></ul>
+			</div>
+			<div id="student-layout6" class="student-layout">
+				<button id="clear-seats1" type="button" class="clear-seats">CLEARSEATS</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--End of Class Selector tabs-->
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="classBoard.js"></script>
+
+<html>
